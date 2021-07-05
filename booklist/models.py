@@ -15,5 +15,3 @@ class Book(models.Model):
     numpages = models.IntegerField(null=True)
     booktype = models.ForeignKey(Booktype, on_delete=models.CASCADE, null=True)
 
-    def __str__(self):
-        return f'{self.datepublished}'
